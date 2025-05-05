@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+
+html,body{
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+@keyframes gradientX {
+    0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+    }
+  }
+  
+  .codeBlocks {
+    background: linear-gradient(270deg, #111827, #466969, #27a8db, #111827);
+    background-size: 300% 300%;
+    animation: gradientX 12s ease infinite;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: #f9fafb; /* almost white */
+    box-shadow: 0 0 20px rgba(7, 50, 85, 0.603);
+    font-size: 14px;
+  }
+  
+  
+.homepage-bg{
+  background: url("../src//assets/bgwhite.avif")
+}
+
+.spinner {
+  position: relative;
+  width: 108px;
+  display: flex;
+  justify-content: space-between;
+}
+.spinner::after , .spinner::before  {
+  content: '';
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-color: #FFF;
+  background-image:  radial-gradient(circle 14px, #0d161b 100%, transparent 0);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  animation: eyeMove 10s infinite , blink 10s infinite;
+}
+@keyframes eyeMove {
+  0%  , 10% {     background-position: 0px 0px}
+  13%  , 40% {     background-position: -15px 0px}
+  43%  , 70% {     background-position: 15px 0px}
+  73%  , 90% {     background-position: 0px 15px}
+  93%  , 100% {     background-position: 0px 0px}
+}
+@keyframes blink {
+  0%  , 10% , 12% , 20%, 22%, 40%, 42% , 60%, 62%,  70%, 72% , 90%, 92%, 98% , 100%
+  { height: 48px}
+  11% , 21% ,41% , 61% , 71% , 91% , 99%
+  { height: 18px}
+}

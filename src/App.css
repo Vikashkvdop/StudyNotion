@@ -1,0 +1,44 @@
+.form-style {
+    
+    border-radius: 0.5rem;
+    background-color: #1f2937;  
+    padding: 12px;
+    color: #d1d5db;
+    
+             
+}
+
+.lable-style{
+    color: white;
+}
+
+.section_heading{
+    color: #d1d5db;
+}
+
+.yellowButton{
+  color:black;
+  cursor: pointer;
+  border-radius: 0.375rem; /* rounded-md = 6px */
+  padding-top: 0.5rem; /* py-2 = 0.5rem top & bottom */
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem; /* px-5 = 1.25rem left & right */
+  padding-right: 1.25rem;
+  font-weight: 600; /* font-semibold */
+  background-color: #f59e0b;
+
+  
+  
+}
+.blackButton{
+    color:black;
+    cursor: pointer;
+    border-radius: 0.375rem; /* rounded-md = 6px */
+    padding-top: 0.5rem; /* py-2 = 0.5rem top & bottom */
+    padding-bottom: 0.5rem;
+    padding-left: 1.25rem; /* px-5 = 1.25rem left & right */
+    padding-right: 1.25rem;
+    font-weight: 600; /* font-semibold */
+    background-color: #f59e0b;
+
+}
